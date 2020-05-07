@@ -1,0 +1,57 @@
+$background: #2d2d4e;
+$pink: #e84c63;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	list-style-type: none;
+}
+
+button {
+	cursor: pointer;
+	border: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	background: $background;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 10% 90%;
+	grid-template-areas:
+		'header header'
+		'info cards';
+	height: 100vh;
+
+	header {
+		grid-area: header;
+	}
+
+	.information {
+		grid-area: info;
+		// border: 1px solid red;
+	}
+
+	.cards {
+		grid-area: cards;
+		// border: 1px solid red;
+	}
+
+	main {
+		display: flex;
+		height: 100%;
+
+		div {
+			flex: 1;
+			border: 1px solid red;
+		}
+	}
+}

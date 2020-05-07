@@ -1,0 +1,60 @@
+$background: #2d2d4e;
+$pink: #e84c63;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+	padding: 1rem 4rem;
+
+	h1 {
+		span {
+			color: $pink;
+			font-weight: 400;
+		}
+	}
+
+	ul {
+		display: flex;
+		align-items: center;
+
+		li {
+			font-size: 0.8rem;
+			margin: 0 0.5rem;
+
+			a {
+				color: white;
+				padding: 0.6rem 1.5rem;
+				transition: 0.2s ease;
+
+				&:hover {
+					color: $pink;
+				}
+			}
+		}
+
+		li:nth-child(4) {
+			a {
+				border: 1px solid;
+				border-radius: 25px;
+
+				&:hover {
+					color: white;
+				}
+			}
+		}
+
+		li:nth-child(5) {
+			a {
+				background: $pink;
+				border-radius: 25px;
+				border-bottom-right-radius: 0;
+
+				&:hover {
+					background: darken($pink, 15%);
+					color: white;
+				}
+			}
+		}
+	}
+}
